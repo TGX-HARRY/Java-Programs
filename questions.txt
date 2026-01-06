@@ -1,0 +1,61 @@
+🔹 VERY COMMON (MUST-DO)
+
+Transpose of a matrix
+Rotate matrix by 90° (clockwise / anticlockwise) ✔
+Spiral order traversal ✔
+Search an element in a sorted 2D matrix
+Row-wise and column-wise sum✔
+Largest row with maximum sum / maximum 1s✔
+
+🔹 COMMON DIAGONAL PROBLEMS
+
+Print main diagonal✔
+Print secondary diagonal✔
+Sum of both diagonals✔
+Check if matrix is diagonal✔
+Check identity matrix✔
+Check symmetric matrix✔
+
+🔹 ZERO / BOOLEAN MATRIX (VERY POPULAR)
+
+Set matrix zeroes
+→ If a[i][j] == 0, make entire row & column zero✔
+Boolean matrix problem
+→ If a cell is 1, make entire row & column 1✔
+Count number of 0s and 1s✔
+
+🔹 SEARCHING & SORTING TYPE
+
+Search in row-wise sorted matrix✔
+Search in row-wise & column-wise sorted matrix✔
+Binary search in a 2D matrix✔
+Find common elements in all rows
+
+🔹 MATRIX TRANSFORMATIONS
+
+Reverse each row✔
+Reverse each column✔
+Rotate matrix by 180°
+Rotate matrix by 270°
+Mirror a matrix horizontally / vertically✔
+
+🔹 PATTERN / COUNT-BASED (EASY–MEDIUM)
+
+Count frequency of elements
+Find transpose equality
+Check if matrix is sparse
+Boundary traversal of matrix
+
+🔹 MULTIPLICATION & BASIC OPERATIONS
+
+Matrix multiplication
+Addition of two matrices
+Subtraction of two matrices
+
+🔹 FREQUENT EXAM QUESTIONS (REPEAT 🔁)
+
+✔ Spiral matrix
+✔ Rotate by 90°
+✔ Set matrix zeroes
+✔ Search in sorted matrix
+✔ Diagonal sums
