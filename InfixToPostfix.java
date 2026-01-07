@@ -6,7 +6,8 @@ public class InfixToPostfix {
         else if ("*/".indexOf(op) != -1) return 2;
         else if ("+-".indexOf(op) != -1) return 1;
         return -1;
-    } 
+    }
+     
     public static String itp(String infix) {
         StringBuilder postfix = new StringBuilder();
         Stack<Character> st = new Stack<>();
