@@ -1,0 +1,144 @@
+📌 SET (HashSet / TreeSet / LinkedHashSet)
+-----------------------------------------
+
+add(x)            → adds element x
+remove(x)         → removes element x
+contains(x)       → checks if x exists
+size()            → number of elements
+isEmpty()         → checks if set is empty
+clear()           → removes all elements
+
+🔹 TreeSet extra (sorted):
+first()            → smallest element
+last()             → largest element
+higher(x)          → smallest element > x
+lower(x)           → largest element < x
+ceiling(x)         → smallest ≥ x
+floor(x)           → largest ≤ x
+
+-----------------------------------------
+
+📌 WHEN TO USE WHICH SET ❓
+-----------------------------------------
+HashSet           → fastest lookup, order not needed
+LinkedHashSet     → insertion order must be preserved
+TreeSet           → sorted output or range queries needed
+
+-----------------------------------------
+
+📌 LIST (ArrayList / LinkedList)
+-----------------------------------------
+
+add(x)             → adds element at end
+add(i, x)          → inserts x at index i
+remove(i)          → removes element at index i
+remove(obj)        → removes object value
+get(i)             → fetch element at index i
+set(i, x)          → replace element at index i
+contains(x)        → checks if x exists
+indexOf(x)         → first index of x
+size()             → number of elements
+clear()            → remove all elements
+
+-----------------------------------------
+
+📌 WHEN TO USE WHICH LIST ❓
+-----------------------------------------
+ArrayList         → fast random access (get/set)
+LinkedList        → frequent insert/delete in middle
+
+-----------------------------------------
+
+📌 MAP (HashMap / LinkedHashMap / TreeMap)
+-----------------------------------------
+
+put(k, v)          → insert key-value pair
+get(k)             → get value of key k
+getOrDefault(k,d)  → value if exists else d
+containsKey(k)     → checks if key exists
+containsValue(v)   → checks if value exists
+remove(k)          → delete key-value pair
+size()             → number of entries
+clear()            → remove all entries
+
+keySet()           → returns all keys
+values()           → returns all values
+entrySet()         → returns key-value pairs
+
+🔥 EXAM FAVORITE:
+putIfAbsent(k,v)   → insert only if key missing
+replace(k,v)       → replace value of key
+
+-----------------------------------------
+
+📌 WHEN TO USE WHICH MAP ❓ ⭐
+-----------------------------------------
+
+HashMap
+→ fastest key lookup
+→ order does NOT matter
+→ best for frequency counting
+→ allows one null key
+
+LinkedHashMap
+→ preserves insertion order
+→ predictable iteration
+→ useful for LRU cache logic
+→ slightly slower than HashMap
+
+TreeMap
+→ keys always sorted
+→ supports range queries
+→ useful for ordered output
+→ no null key allowed
+
+-----------------------------------------
+
+📌 ARRAYS (java.util.Arrays)
+-----------------------------------------
+
+sort(arr)          → sorts array
+sort(arr,l,r)      → sorts range [l,r)
+binarySearch(arr,x)→ search x (array must be sorted)
+equals(a,b)        → checks equality
+fill(arr,x)        → fill array with x
+toString(arr)      → array → string
+deepToString(arr)  → 2D array → string
+
+-----------------------------------------
+
+📌 COLLECTIONS (java.util.Collections)
+-----------------------------------------
+
+sort(list)         → sort list
+reverse(list)      → reverse list
+min(list)          → smallest element
+max(list)          → largest element
+frequency(list,x) → count x in list
+shuffle(list)      → random order
+fill(list,x)       → fill list with x
+
+-----------------------------------------
+
+📌 QUICK CONVERSIONS (⭐ VERY IMPORTANT)
+-----------------------------------------
+
+Array → List
+Arrays.asList(arr) → fixed-size list
+
+Set → List
+new ArrayList<>(set) → converts set to list
+
+List → Array
+list.toArray(new Integer[0]) → list to array
+
+-----------------------------------------
+
+🧠 EXAM DECISION SHORTCUTS (🔥 GOLD)
+-----------------------------------------
+
+Need fastest lookup?        → HashSet / HashMap
+Need sorted output?         → TreeSet / TreeMap
+Need insertion order?       → LinkedHashSet / LinkedHashMap
+Need frequency counting?   → HashMap
+Need index-based access?   → ArrayList
