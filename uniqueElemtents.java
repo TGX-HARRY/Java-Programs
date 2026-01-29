@@ -6,13 +6,9 @@ public class uniqueElemtents {
         int[] ans = new int[arr.length];
         int ind = 0;
         for(int i=0;i<arr.length;i++) {
-            if (freqCount.containsKey(arr[i])) {
-                freqCount.put(arr[i], freqCount.get(arr[i])+1);
-            }
-            else {
-                freqCount.put(arr[i], 1);
-            }
+            freqCount.put(arr[i], freqCount.getOrDefault(arr[i], 0) + 1);
         }
+        
         for(Integer i: freqCount.keySet()) {
             if (freqCount.get(i) != k) ans[ind++] = i; 
         }
