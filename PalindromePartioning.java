@@ -20,7 +20,7 @@ public class PalindromePartioning {
                 curr.add(str.substring(index, j+1));
                 helper(j + 1, str, curr, ans);
                 curr.remove(curr.size() - 1);
-
+                
             }
         }
     }
