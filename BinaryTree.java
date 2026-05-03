@@ -71,6 +71,13 @@ public class BinaryTree {
             }
             return false;
         }
+
+        public int getHeight(TreeNode root) {
+            if (root == null) return -1;
+            int x = getHeight(root.left) + 1;
+            int y = getHeight(root.right) + 1;
+            return Math.max(x,y);
+        }
     }
 
     public static void main(String[] args) {
@@ -88,7 +95,9 @@ public class BinaryTree {
         if (found) System.out.println("Found");
         else System.out.println("Not found");
         //--------------------------------------------------
-
+        int height = helper.getHeight(root);
+        System.out.println("Height of tree = " + height);
+        // -------------------------------------------------
         return;
     }
 }
